@@ -1,0 +1,16 @@
+LOG:  database system was shut down at 2018-10-06 07:05:08 BST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  could not open extension control file "/usr/local/Cellar/postgresql@9.6/9.6.10/share/postgresql@9.6/extension/postgis.control": No such file or directory
+STATEMENT:  CREATE EXTENSION postgis;
+FATAL:  database "ulversson" does not exist
+FATAL:  database "ulversson" does not exist
+FATAL:  database "ulversson" does not exist
+ERROR:  could not open extension control file "/usr/local/Cellar/postgresql@9.6/9.6.10/share/postgresql@9.6/extension/postgis.control": No such file or directory
+STATEMENT:  CREATE EXTENSION postgis;
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down

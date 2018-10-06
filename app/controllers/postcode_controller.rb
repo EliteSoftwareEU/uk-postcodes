@@ -3,7 +3,7 @@ class PostcodeController < ApplicationController
   
   caches_page :index, :show
   
-  before_filter(:only => [:show, :nearest]) { alternate_formats [:json, :xml, :rdf, :csv, :n3] }
+  before_action(:only => [:show, :nearest]) { alternate_formats [:json, :xml, :rdf, :csv, :n3] }
 
   def index
     

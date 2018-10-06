@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require leaflet
- *= require bootstrap_and_overrides
+ *= require bootstrap_and_overrides.css
  */
 
 /* Sticky footer styles
