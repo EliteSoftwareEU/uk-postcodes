@@ -419,7 +419,6 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   leaflet-rails
-  less-rails
   linkeddata
   osgb
   pg
