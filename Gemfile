@@ -28,7 +28,7 @@ gem "rack-jsonp-middleware"
 gem "actionpack-page_caching"
 gem "actionpack-action_caching"
 gem "pry-remote"
-
+gem "thin"
 group :assets do
   gem "less-rails"
   gem "sass-rails"
