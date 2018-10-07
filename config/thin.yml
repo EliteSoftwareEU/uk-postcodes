@@ -14,5 +14,5 @@ threaded: true
 no-epoll: true
 daemonize: true
 socket: tmp/sockets/thin.sock
-chdir: /path/to/your/apps/root
+chdir: /home/deployer/apps/uk_postcodes/current
 tag: uk_postcodes
