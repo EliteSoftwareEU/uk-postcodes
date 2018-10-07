@@ -12,7 +12,7 @@ set :rvm_custom_path, '/usr/share/rvm'  # only needed if not detected# set :form
 # set :log_level, :debug
 # set :pty, true
 
-# set :linked_files, %w{config/database.yml}
+ set :linked_files, %w{config/database.yml config/secrets.yml}
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 #set :linked_dirs, fetch(:linked_dirs) + %w{public/postcode}
 
