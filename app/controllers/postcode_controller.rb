@@ -22,8 +22,8 @@ class PostcodeController < ApplicationController
       redirect_to postcode_url(params[:id], params), status: "301" and return 
     end
         
-    p = UKPostcode.new(params[:id])
-    postcode = p.norm
+    p = UKPostcode.parse(params[:id])
+    postcode = p.to_s
     
     render_error(404, "Postcode #{p.to_s} is not valid") and return unless p.valid?
     
@@ -46,8 +46,8 @@ class PostcodeController < ApplicationController
   
   def nearest
     if params[:postcode]
-      p = UKPostcode.new(params[:postcode])
-      postcode = Postcode.where(:postcode => p.norm).first
+      p = UKPostcode.parse(params[:postcode])
+      postcode = Postcode.where(:postcode => p.to_s).first
       params[:lat] = postcode.lat
       params[:lng] = postcode.lng
       @postcode = postcode.postcode
@@ -115,11 +115,11 @@ class PostcodeController < ApplicationController
   end
   
   def search
-    p = UKPostcode.new(params[:q])
+    p = UKPostcode.parse(params[:q])
     
     render_error(404, "Postcode #{p.to_s} is not valid") and return unless p.valid?
     
-    postcode = p.norm.gsub(" ", "")    
+    postcode = p.to_s.gsub(" ", "")    
     redirect_to postcode_url(postcode, format: params[:format]), status: "303"
   end
 

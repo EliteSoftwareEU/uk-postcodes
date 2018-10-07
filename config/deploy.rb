@@ -1,8 +1,8 @@
 set :application, 'uk-postcodes'
-set :repo_url, 'https://github.com/theodi/uk-postcodes.git'
+set :repo_url, 'https://github.com/EliteSoftwareEU/uk-postcodes.git'
 set :branch, 'master'
 
-set :deploy_to, '/var/www/uk-postcodes'
+set :deploy_to, '/home/deployer/apps/uk_postcodes'
 set :scm, :git
 set :ssh_options, keys: ["config/deploy_id_rsa"] if File.exist?("config/deploy_id_rsa")
 
@@ -14,7 +14,7 @@ set :ssh_options, keys: ["config/deploy_id_rsa"] if File.exist?("config/deploy_i
 
 # set :linked_files, %w{config/database.yml}
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-set :linked_dirs, fetch(:linked_dirs) + %w{public/postcode}
+#set :linked_dirs, fetch(:linked_dirs) + %w{public/postcode}
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 # set :keep_releases, 5

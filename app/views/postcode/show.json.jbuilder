@@ -6,19 +6,3 @@ json.geo do
   json.northing @postcode.northing
   json.geohash @postcode.geohash
 end
-json.administrative do
-  @postcode.admin_areas.each do |title, area|
-    json.set!(title) do
-      json.title area[:name]
-      unless area[:gss] == "999999999"
-        unless @postcode.ni?
-          json.uri area[:ons_uri]
-        end
-        json.code area[:gss]
-      else
-        json.uri area[:os_uri]
-        json.code area[:os]
-      end
-    end
-  end
-end

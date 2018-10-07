@@ -1,8 +1,5 @@
 class Postcode < ActiveRecord::Base
   
-  self.rgeo_factory_generator = RGeo::Geos.factory_generator
-
-  set_rgeo_factory_for_column(:latlng, RGeo::Geographic.spherical_factory(:srid => 4326))
   
   ADMIN_AREAS = [:council, :county, :ward, :constituency, :parish, :electoral_district]
   

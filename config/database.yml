@@ -6,7 +6,7 @@ development:
   pool: 5
   host: localhost
   database: uk_postcodes_development    # substitute your dev database name
-  username: uk_postcodes                # substitute the username your app will use to connect
+  username: root                # substitute the username your app will use to connect
   password:                             # substitute the user's password
   su_username: root                     # substitute a superuser for the database
   su_password:                          # substitute the superuser's password
