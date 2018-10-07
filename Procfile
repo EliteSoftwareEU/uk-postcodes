@@ -1,1 +1,1 @@
-web: bundle exec thin start -p 3000
+web: bundle exec thin start -p 8080 -R config.ru -C config/thin.yml

@@ -29,6 +29,8 @@ gem "actionpack-page_caching"
 gem "actionpack-action_caching"
 gem "pry-remote"
 gem "thin"
+gem "foreman"
+
 group :assets do
   gem "less-rails"
   gem "sass-rails"
