@@ -5,6 +5,7 @@ gem "jquery-rails"
 gem "activesupport"
 gem "capistrano", :require => false
 gem "capistrano-rails", :require => false
+gem "capistrano-rvm", require: false
 gem "dotenv-rails"
 gem "osgb"
 gem "uk_postcode"
