@@ -30,7 +30,7 @@ gem "actionpack-action_caching"
 gem "pry-remote"
 
 group :assets do
-  #gem "less-rails"
+  gem "less-rails"
   gem "sass-rails"
   gem "coffee-rails"
 end
